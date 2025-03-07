@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultar CPF</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Consultar CPF</h1>
+        <form id="cpfForm">
+            <label for="cpfInput">Digite o CPF:</label>
+            <input type="text" id="cpfInput" placeholder="Ex.: 123.456.789-09" oninput="formatCPF(this)">
+            <button type="submit">Consultar</button>
+        </form>
+        <p id="result"></p>
+    </div>
+
+    <script src="cpfValidator.js"></script>
+</body>
+</html>
